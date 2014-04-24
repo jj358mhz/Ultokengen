@@ -16,3 +16,8 @@ The expiration time of the token hard-coded at current UTC time + 120 seconds.
     4.       Asset type
     5.       GUID (found in the upLynk CMS)
     6.       Customization parameters (see upLynk CMS documentation: http://support.uplynk.com/doc_digital_rights_management.html)
+***********************************************************************************************************************
+
+4-23-2014
+    
+CHANGED - Added an expiry of 1 year (31,557,600 seconds) from the time the token is minted
