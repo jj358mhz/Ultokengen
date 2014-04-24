@@ -19,7 +19,7 @@ print ("With this %s, I can begin to compute" % rays);
 
 # combine all of the parameters except the signature
 queryStr = urllib.urlencode(dict(
-    exp = int(time.time()) + 120, # expire 120 seconds from now
+    exp = int(time.time()) + 31557600, # expire 1 year from now
     ct = ct, # an asset
     cid = cid, # the asset's ID
     iph = hashlib.sha256(ip).hexdigest(), # the user's IP address hash
