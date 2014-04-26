@@ -14,7 +14,7 @@ ct = raw_input('Enter the content type, a for asset or c for live channel : ') #
 print ("%s. Cool" % ct);
 cid = raw_input('Enter the GUID : ') # the content ID from the upLynk CMS
 print ("Wow, %s is a big number!" % cid);
-rays =raw_input('Enter the customization parameters, abc : ') # customization parameter
+rays = raw_input('Enter the customization parameters, abc : ') # customization parameter
 print ("With this %s, I can begin to compute" % rays);
 
 # combine all of the parameters except the signature
