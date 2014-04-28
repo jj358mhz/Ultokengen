@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Version 1.00 - 17 Jan 2014
+## Version 1.00 - 22 Apr-2014
 * NEW: ultokengen.py
 
 ## Version 1.01 - 23-Apr-2014
