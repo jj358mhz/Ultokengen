@@ -1,4 +1,5 @@
 # program customized to run on Windows platforms
+# Version 1.02 (28-Apr-2014)
 
 import hashlib, time, hmac, urllib.parse
 
