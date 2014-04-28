@@ -18,6 +18,14 @@ The expiration time of the token hard-coded at current UTC time + 120 seconds.
     6.       Customization parameters (see upLynk CMS documentation: http://support.uplynk.com/doc_digital_rights_management.html)
 ***********************************************************************************************************************
 
-4-23-2014
-    
-CHANGED - Added an expiry of 1 year (31,557,600 seconds) from the time the token is minted
+History
+-------
+1.00 (21-Apr-2014)
+    - NEW: ultokengen.py
+
+1.01 (23-Apr-2014)
+    - CHANGED - Added an expiry of 1 year (31,557,600 seconds) from the time the token is minted
+
+1.02 (28-Apr-2014)
+    - ADDED - New file (ultokengen_win.py). Program customized to run on Windows platforms
+    - FIXED - eliminated redundant lines of code
