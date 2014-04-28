@@ -1,9 +1,6 @@
-#!/usr/bin/python
-
 import hashlib, time, hmac, urllib
 
 # inputs
-
 ip = raw_input('Enter your IP address : ') # the user's IP address; normally obtained from the server itself
 print ("Hi %s, I know where you live!" % ip);
 apiKey = raw_input('Enter your API key : ') # from the CMS UI
@@ -31,6 +28,5 @@ sig = hmac.new(apiKey, queryStr, hashlib.sha256).hexdigest()
 queryStr = queryStr + '&sig=' + sig
 
 # The token would then be added to a playback URL, e.g.
-url = pbURL
 url = pbURL + '?' + queryStr
 print (url)
