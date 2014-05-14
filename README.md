@@ -12,6 +12,14 @@ The programs mints the token based on a number of parameters and appends them to
 
 The expiration time of the token hard-coded at current UTC time + 1 year (31,557,600 seconds).
 
+## Installation
+
+Browse to your desired install sub-directory and run the following code
+
+```CURL
+curl https://github.com/jj358mhz/Ultokengen/raw/master/ultokengen.py
+```
+
 ## What you will be prompted for is:
 * Your WAN IP address
 * The API key (found in upLynk CMS)
