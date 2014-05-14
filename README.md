@@ -18,14 +18,14 @@ Browse to your desired install sub-directory and run the following code:
 
 * For **UNIX/Linux**
 
-```CURL
-curl https://github.com/jj358mhz/Ultokengen/raw/master/ultokengen.py
+```PYTHON
+curl "https://github.com/jj358mhz/Ultokengen/raw/master/ultokengen.py" -o ultokengen.py
 ```
 
 * For **Windows**
 
-```CURL
-curlhttps://github.com/jj358mhz/Ultokengen/raw/master/win_ultokengen.py
+```PYTHON
+curl "https://github.com/jj358mhz/Ultokengen/raw/master/ultokengen_win.py" -o ultokengen_win.py
 ```
 
 ## What you will be prompted for is:
