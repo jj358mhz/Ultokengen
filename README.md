@@ -16,10 +16,16 @@ The expiration time of the token hard-coded at current UTC time + 1 year (31,557
 
 Browse to your desired install sub-directory and run the following code:
 
-* For **OSX/Linux**
+* For **UNIX/Linux**
 
 ```CURL
 curl https://github.com/jj358mhz/Ultokengen/raw/master/ultokengen.py
+```
+
+* For **Windows**
+
+```CURL
+curlhttps://github.com/jj358mhz/Ultokengen/raw/master/win_ultokengen.py
 ```
 
 ## What you will be prompted for is:
