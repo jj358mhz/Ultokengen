@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Version 1.02 (28-Apr-2014)
 
 import hashlib, time, hmac, urllib
