@@ -1,4 +1,4 @@
-__author__ = 'v402625'
+__author__ = ''
 
 import hashlib
 import time
