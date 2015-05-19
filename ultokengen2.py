@@ -1,4 +1,5 @@
-__author__ = ''
+# ultokengen2
+# Version 1.1
 
 '''
 This program will tokenize a DRM-protected URL
