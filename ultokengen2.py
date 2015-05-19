@@ -1,5 +1,12 @@
 __author__ = ''
 
+'''
+This program will tokenize a DRM-protected URL
+provided a valid API key is entered when prompted.
+It will present both a standard tokenized playback URL and
+one that is XML-compliant for XML feed readers.
+'''
+
 import hashlib
 import time
 import hmac
@@ -10,8 +17,10 @@ import random
 apiKey = raw_input('Enter your API key : ')  # from the CMS UI
 url = raw_input('Enter the Playback URL : ')  # the playback URL from the upLynk CMS
 ct = raw_input('Enter the content type, "a" for asset or "c" for live channel : ')  # the content type
-cid = raw_input('Enter the GUID : ')  # the content ID from the upLynk CMS
-#rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter
+cid_m3u8 = url.strip("http://content.uplynk.com/channel/")  # strips the 1st part of the URL
+cid = cid_m3u8.replace('.m3u8', '')  # strips the .m3u8 off the URL and leaves only the GUID
+print ("The extracted GUID is: "+cid)
+#rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
 
 # combine all of the parameters except the signature
 queryStr = urllib.urlencode(dict(
@@ -20,18 +29,18 @@ queryStr = urllib.urlencode(dict(
     rn=str(random.randint(0, 2**32)),  # random number
     ct=ct,  # an asset
     cid=cid,  # the asset's ID
-    #rays=rays,  # customization parameter
+    # rays=rays,  # customization parameter, uncomment if needed
 ))
 
 # compute the signature and add it to the *end*
 sig = hmac.new(apiKey, queryStr, hashlib.sha256).hexdigest()
 queryStr = queryStr + '&sig=' + sig
 
-# The token would then be added to a playback URL, e.g.
+# the token would then be added to a playback URL, e.g.
 turl = url + '?' + queryStr
 print ("Standard URL: "+turl)
 
-# The following code provides a XML-compliant URL
+# the following code provides a XML-compliant URL
 new_string = turl.replace('&', '&#38;')
 final_url = new_string.replace('?', '&#63;')
 print ("XML-compliant URL: "+final_url)
