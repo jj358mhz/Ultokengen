@@ -3,7 +3,7 @@
 ## Version 1.1 - (18-May-2015)
 * ADDED: Program will generate an XML-compliant URL
 * ADDED: Program will auto-extract the asset GUID from the URL
-* CHANGED: Extended the token life 100 years from the time the URL is minted
+* CHANGED: Extended the token life 100 years from the time the token is minted
 
 ## Version 1.02 - (28-Apr-2014)
 * ADDED: New file (ultokengen_win.py). Program customized to run on Windows platforms
