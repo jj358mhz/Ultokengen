@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 1.1.1 - (20-May-2015)
+* FIXED: GUID extraction code
+
 ## Version 1.1 - (18-May-2015)
 * ADDED: Program will generate an XML-compliant URL
 * ADDED: Program will auto-extract the asset GUID from the URL
