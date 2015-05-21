@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 1.1.2 - (21-May-2015)
+* UPDATED: Minor code text changes
+
 ## Version 1.1.1 - (20-May-2015)
 * FIXED: GUID extraction code
 

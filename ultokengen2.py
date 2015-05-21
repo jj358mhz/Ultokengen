@@ -1,5 +1,5 @@
 # ultokengen2
-# Version 1.1.1
+# Version 1.1.2
 
 '''
 This program will tokenize a DRM-protected URL
@@ -20,7 +20,7 @@ url = raw_input('Enter the Playback URL : ')  # the playback URL from the upLynk
 ct = raw_input('Enter the content type, "a" for asset or "c" for live channel : ')  # the content type
 cid = url.split('/')[-1][:-5]  # extracts the GUID
 print ("The extracted GUID is: "+cid)
-#rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
+# rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
 
 # combine all of the parameters except the signature
 queryStr = urllib.urlencode(dict(
@@ -38,9 +38,9 @@ queryStr = queryStr + '&sig=' + sig
 
 # the token would then be added to a playback URL, e.g.
 turl = url + '?' + queryStr
-print ("Standard URL: "+turl)
+print ('Standard URL: '+turl)
 
 # the following code provides a XML-compliant URL
 new_string = turl.replace('&', '&#38;')
 final_url = new_string.replace('?', '&#63;')
-print ("XML-compliant URL: "+final_url)
+print ('XML-compliant URL: '+final_url)
