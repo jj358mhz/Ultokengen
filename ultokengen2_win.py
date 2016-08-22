@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Version 1.1.2
+# Version 1.1.3
 # program customized to run on Windows platforms
 
 '''
@@ -18,15 +18,17 @@ ct = raw_input('Enter the content type, "a" for asset or "c" for live channel : 
 cid = url.split('/')[-1][:-5]  # extracts the GUID
 print ("The extracted GUID is: "+cid)
 # rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
+# ad = raw_input('Enter the ad server name : ')  # customization parameter, uncomment if needed
 
 # combine all of the parameters except the signature
 queryStr = urllib.urlencode(dict(
-    tc='1',  # token check algorithm version
+    tc='0',  # token check algorithm version
     exp=int(time.time()) + 3136320000,  # expire 100 years from now
     rn=str(random.randint(0, 2**32)),  # random number
     ct=ct,  # an asset
     cid=cid,  # the asset's ID
     # rays=rays,  # customization parameter, uncomment if needed
+    # ad=ad,  # customization parameter, uncomment if needed
 ))
 
 # compute the signature and add it to the *end*
