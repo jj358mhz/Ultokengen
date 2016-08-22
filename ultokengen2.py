@@ -1,5 +1,5 @@
 # ultokengen2
-# Version 1.1.2
+# Version 1.1.3
 
 '''
 This program will tokenize a DRM-protected URL
