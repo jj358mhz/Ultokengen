@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Version 1.1.3 - (22-Aug-2016)
+* ADDED: Rays and ad parameter options
+* UPDATED: Minor code text changes
+
 ## Version 1.1.2 - (21-May-2015)
 * UPDATED: Minor code text changes
 
