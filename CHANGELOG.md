@@ -1,5 +1,9 @@
 # CHANGELOG
 
+
+## Version 1.1.4 - (13-Sept-2017)
+* UPDATED: Live event prompt for content type
+
 ## Version 1.1.3 - (22-Aug-2016)
 * ADDED: Rays and ad parameter options
 * UPDATED: Minor code text changes

@@ -1,5 +1,5 @@
 # ultokengen2
-# Version 1.1.3
+# Version 1.1.4
 
 '''
 This program will tokenize a DRM-protected URL
@@ -17,7 +17,7 @@ import random
 # inputs
 apiKey = raw_input('Enter your API key : ')  # from the CMS UI
 url = raw_input('Enter the Playback URL : ')  # the playback URL from the upLynk CMS
-ct = raw_input('Enter the content type, "a" for asset or "c" for live channel : ')  # the content type
+ct = raw_input('Enter the content type, "a" for asset or "c" for live channel or "e" for live event : ')  # the content type
 cid = url.split('/')[-1][:-5]  # extracts the GUID
 print ("The extracted GUID is: "+cid)
 # rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
