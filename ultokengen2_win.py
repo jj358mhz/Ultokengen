@@ -2,6 +2,8 @@
 # Version 1.1.4
 # program customized to run on Windows platforms
 
+# Copyright (C) 2014-2017 Jeff Johnston <jj358mhz@gmail.com>
+
 '''
 This program will tokenize a DRM-protected URL
 provided a valid API key is entered when prompted.
