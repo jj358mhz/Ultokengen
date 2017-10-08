@@ -20,8 +20,8 @@ url = raw_input('Enter the Playback URL : ')  # the playback URL from the upLynk
 ct = raw_input('Enter the content type, "a" for asset or "c" for live channel or "e" for live event : ')  # the content type
 cid = url.split('/')[-1][:-5]  # extracts the GUID
 print ("The extracted GUID is: "+cid)
-# rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
-# ad = raw_input('Enter the ad server name : ')  # customization parameter, uncomment if needed
+rays = raw_input('Enter the customization parameters, abc : ')  # customization parameter, uncomment if needed
+ad = raw_input('Enter the ad server name : ')  # customization parameter, uncomment if needed
 
 # combine all of the parameters except the signature
 queryStr = urllib.urlencode(dict(
@@ -30,8 +30,8 @@ queryStr = urllib.urlencode(dict(
     rn=str(random.randint(0, 2**32)),  # random number
     ct=ct,  # an asset
     cid=cid,  # the asset's ID
-    # rays=rays,  # customization parameter, uncomment if needed
-    # ad=ad,  # customization parameter, uncomment if needed
+    rays=rays,  # customization parameter, uncomment if needed
+    ad=ad,  # customization parameter, uncomment if needed
 ))
 
 # compute the signature and add it to the *end*
